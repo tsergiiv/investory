@@ -1,462 +1,52 @@
 <?php get_header(); ?>
 
 	<!-- CONTENT -->
-	<!-- #1 Main Block -->
-	<!-- #2 Video Block -->
+	<!-- #1 Enrich, Transform, Secure & Deliver Quality Data -->
+	<!-- #2 Unique Value Proposition -->
+	<!-- #3 What We Know Today -->
+	<!-- #4 Technology Now Vs Future -->
+	<!-- #5 Where Global Data Governance Future Is -->
+	<!-- #6 Where Enterprise Data Managment Future Is -->
+	<!-- #7 Value We Deliever -->
 
 	<main>
-		<section class="section-title flex flex-column relative">
-			<div class="container-main">
-				<div class="container-inner">
-					<h1 class="gilroy"><span>Enrich, Transform,</span> <span>Secure & Deliver</span> <span>Quality Data</span></h1>
-				</div>
-			</div>
-			<div class="section-title__info relative">
-				<div class="section-info__head relative flex">
-					<div class="info-head__item">
-						Investor Presentation
-					</div>
-				</div>
-				<div class="section-info__nums relative grid">
-					<div class="info-nums__item flex flex-column">
-						<span class="gilroy">$ 1,2M</span>
-						Initial Capital
-					</div>
-					<div class="info-nums__item flex flex-column">
-						<span class="gilroy">$ 10,2M</span>
-						Revenue from 2025
-					</div>
-					<div class="info-nums__item flex flex-column">
-						<span class="gilroy">141.7%</span>
-						CAGR
-					</div>
-				</div>
-			</div>
-			<video autoplay muted id="heading">
-				<source src="<?php bloginfo('template_url'); ?>/assets/video/heading.mp4" type="video/mp4">
-			</video>
-		</section>
-		<section class="section-values">
-			<div class="container-main">
-				<div class="container-inner">
-					<div class="title flex">
-						<h3 class="relative">Unique Value Proposition</h3>
-					</div>
-					<div class="values-list grid">
-						<div class="values-item grid align-center relative">
-							<img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/value-1.png" alt="Value">
-							<div class="relative">Modernize traditional data systems and deliver mission-critical data to next-generation analytic environments</div>
-						</div>
-						<div class="values-item grid align-center relative">
-							<img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/value-2.png" alt="Value">
-							<div class="relative">Enable best-in-class data optimization, utilization and performance upon demand</div>
-						</div>
-						<div class="values-item grid align-center relative">
-							<img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/value-3.png" alt="Value">
-							<div class="relative">Enhance custom quality controls, risk management and compliance driven capabilities within dedicated Cloud space</div>
-						</div>
-						<div class="values-item grid align-center relative">
-							<img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/value-4.png" alt="Value">
-							<div class="relative">Minimize human errors, eliminate manual efforts, cut internal technology costs and transfer liabilities to an expert platform</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="section-we-know" class="section-we-know relative">
-			<div class="container-main">
-				<div class="container-inner">
-					<div class="title flex justify-center">
-						<h3 class="relative">What We Know Today</h3>
-					</div>
-					<div class="we-know__list grid relative">
-						<div class="we-know__left grid">
-							<div class="we-know__item grid relative">
-								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-1.svg" alt=""></div>
-								<div class="relative">Whether a pandemic or a recession, volatility exists in the world, and resilient delivery is a key to success.</div>
-							</div>
-							<div class="we-know__item grid relative">
-								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-2.svg" alt="Value"></div>
-								<div class="relative">COVID-19 has shifted where employees, customers, vendors and organizational ecosystems physically exist. Location independence requires a technology shift to support this new version of reality.</div>
-							</div>
-							<div class="we-know__item grid relative">
-								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-3.svg" alt="Value"></div>
-								<div class="relative">Most expensive business initiatives are deemed "in-house" and usually fall outside of the budget due to technical constraints, lack of expertise, project/resource mismanagement or other unforseen events.</div>
-							</div>
-						</div>
-						<div class="we-know__right grid">
-							<div class="we-know__item grid relative">
-								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-4.svg" alt="Value"></div>
-								<div class="relative">Corporations spend hundreds of millions on annual basis to co-op with changes and current market demand. Key average size initiatives are between $700K and $5 million, depending on the current organizational structure, technology, business model or regulatory demand.</div>
-							</div>
-							<div class="we-know__item grid relative">
-								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-5.svg" alt="Value"></div>
-								<div class="relative">
-									Most successful initiatives are deemed "vendor/external partner based" and the costs usually end up less than the projected budgets.
-									<br><br>
-									Key success factors are knowledge of strategic technology trends, streamlined execution and implementation models, and agility to clients' demands.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<video autoplay muted loop id="rocket">
-				<source src="<?php bloginfo('template_url'); ?>/assets/video/rocket.mp4" type="video/mp4">
-			</video>
-		</section>
-		<section class="section-technology relative">
-			<div class="container-main">
-				<div class="container-inner">
-					<div class="title flex justify-center">
-						<h3 class="relative">Technology Now Vs Future</h3>
-					</div>
-					<div class="section-tabs">
-						<ul class="nav-tabs flex gilroy">
-							<li><a class="active flex align-center justify-center" href="#tab-now">Now</a></li>
-							<li><a class="flex align-center justify-center" href="#tab-future">Future</a></li>
-						</ul>
-						<div id="tab-now" class="section-tab grid fade">
-							<div class="tab-item grid relative animated-icons">
-								<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-1.svg" alt="Technology"></div>
-								<div class="relative">Enterprises struggle with the dispersed data across the organization, which makes it harder to process, understand and interpret.</div>
-							</div>
-							<div class="tab-item grid relative animated-icons">
-								<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-2.svg" alt="Technology"></div>
-								<div class="relative">Corporate technology groups are challenged with data management, governance, and data transformation requirements and spend resources on data modernization and cleanup activities.</div>
-							</div>
-							<div class="tab-item grid relative animated-icons">
-								<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-3.svg" alt="Technology"></div>
-								<div class="relative">Legacy data repositories are are notoriously known as "biggest roadblock" to any Audit, Risk and Compliance initiative and often lead to fines and legal obstacles: "Poor-Quality Data Imposes Costs and Risks on Businesses" - Forbes Insights Report.</div>
-							</div>
-							<div class="tab-item grid relative animated-icons">
-								<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-4.svg" alt="Technology"></div>
-								<div class="relative">According Harvard Business Review, “Only 3% of Companies’ Data Meets Basic Quality Standards”.</div>
-							</div>
-							<div class="tab-item grid relative animated-icons">
-								<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-5.svg" alt="Technology"></div>
-								<div class="relative">Legacy systems are expensive to keep, but more expensive to "walk away" from.</div>
-							</div>
-							<div class="tab-item grid relative animated-icons">
-								<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-6.svg" alt="Technology"></div>
-								<div class="relative">The concept of Agile Data is growing, particularly within the space of Technology post global pandemic.</div>
-							</div>
-							<div class="tab-item-last grid">
-								<div class="tab-item grid relative animated-icons">
-									<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-7.svg" alt="Technology"></div>
-									<div class="relative">Businesses who are robust in data analytics achieve more than the those who do not.</div>
-								</div>
-								<div class="tab-item grid relative animated-icons">
-									<div class="tab-item__img animated-icons__img flex align-center justify-center"><img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-8.svg" alt="Technology"></div>
-									<div class="relative">More than half of chief financial officers (CFOs) and finance executives admit the pandemic has heightened the need to invest in automation technology.</div>
-								</div>
-							</div>
-						</div>
-						<div id="tab-future" class="section-tab grid">
-							<div class="tab-item grid relative">
-								<img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-8.svg" alt="Technology">
-								<div class="relative">Data and analytics combined with AI technologies will be paramount in the effort to predict, prepare and respond in a proactive and accelerated manner.</div>
-							</div>
-							<div class="tab-item grid relative">
-								<img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-9.svg" alt="Technology">
-								<div class="relative">API-enabled Cloud SaaS and IaaS are expected to provide tremendous benefits to enterprises by offering the infrastructure and resources for big data processing.</div>
-							</div>
-							<div class="tab-item grid relative">
-								<img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-10.svg" alt="Technology">
-								<div class="relative">Covid crises shifted enterprise focus on digital transformation, data analytics and Cloud-based solutions.</div>
-							</div>
-							<div class="tab-item grid relative">
-								<img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-11.svg" alt="Technology">
-								<div class="relative">Security and compliance protocols become critical to business data operations and are therefore incorporated in all tech projects.</div>
-							</div>
-							<div class="tab-item-last grid">
-								<div class="tab-item grid relative">
-									<img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-12.svg" alt="Technology">
-									<div class="relative">Enterprises increase their investments in technology due to rapid transition to Cloud operations.</div>
-								</div>
-								<div class="tab-item grid relative">
-									<img class="mx-auto" src="<?php bloginfo('template_url'); ?>/assets/img/icons/technology-13.svg" alt="Technology">
-									<div class="relative">Cloud Data Migration, Management and Analytics projects are now classified as a "high profile" tech initiatives.</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-global relative">
-			<div class="container-main">
-				<div class="container-inner">
-					<div class="title flex flex-column align-center">
-						<h3 class="relative">
-							Where Global Data Governance Future Is
-						</h3>
-						<div class="title-tip">
-							Data governance market is expected to grow at a CAGR of 22.27% in the forecast period of 2020 to 2027
-						</div>
-					</div>
-					<div class="global-data-overflow scrollbar-map scrollbar-map-global">
-						<div class="global-data grid">
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2020</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2021</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2022</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2023</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2024</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2025</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2026</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2027</div>
-								<div class="data-chart flex flex-column">
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-									<div></div>
-								</div>
-							</div>
-						</div>
-						<div class="global-data__tips grid">
-							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">North America</div>
-							</div>
-							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">Europe</div>
-							</div>
-							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">Asia Pacific</div>
-							</div>
-							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">South America</div>
-							</div>
-							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">Middle East and Africa</div>
-							</div>
-						</div>
-						<div class="bot-tip">
-							Source: Data Bridge Market Research Market Analysis Study 2020
-						</div>
-						<div class="scroll-element_outer">
-							<div class="scroll-element_size">
-								<div class="scroll-element_track"></div>
-								<div class="scroll-bar"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-managment">
-			<div class="container-main">
-				<div class="container-inner">
-					<div class="managment-wrapper grid">
-						<div class="managment-wrapper__left">
-							<div class="title flex">
-								<h3 class="relative">Where Enterprise Data Managment Future Is</h3>
-							</div>
-							<div class="managment-description">
-								The global enterprise data management market size is expected to grow from USD 77.9 billion in 2020 to USD 122.9 billion by 2025, at a Compound Annual Growth Rate (CAGR) of 9.5% during the forecast period.
-								<br><br>
-								Key growth factors for the market include the need to effectively manage the hierarchical master data generated across departments, adoption of Internet of Things (IoT) devices, and digitalization.
-							</div>
-						</div>
-						<div class="managment-wrapper__right grid">
-							<div class="managment-right__item flex flex-column align-center">
-								<span>77.9 billion USD</span>
-								<div class="managment-img">
-									<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/managment-1.svg" alt="Managment">
-									<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/managment-1-mobile.svg" alt="Managment">
-								</div>
-								<div class="flex flex-column">
-									<span>2020-e</span>
-									<span>E: estimated</span>
-								</div>
-							</div>
-							<div class="managment-right__item flex flex-column align-center">
-								<span>122.9 billion USD</span>
-								<div class="managment-img"></div>
-								<div class="flex flex-column">
-									<span>2025-p</span>
-									<span>P: projected</span>
-								</div>
-							</div>
-							<div class="managment-right__tip">
-								Source: Secondary Leterature, Expert Interviews, and MarketsanMarkets Analysis
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section-deliver">
-			<div class="container-main">
-				<div class="container-inner">
-					<div class="title flex">
-						<h3 class="relative">Value We Deliever</h3>
-					</div>
-					<div class="deliver-list grid">
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-1.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We operate in a Big Data space with focus on high quality data generation, transformation and processing
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-2.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We deliver technologies enabling collaboration and productivity: shared Cloud space and integrations to enterprise-wide solutions
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-3.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								Our platform connects with various systems simultaneously without breaching Client confidentiality and Data Security policies
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-4.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We resolve issues associated with consolidating and managing data across systems
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-5.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We provide secure remote access: passwordless and multifactor authentication, zero trust network access (ZTNA), secure access service edge (SASE) and identity as the new security perimeter
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-6.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We develop Cloud and edge infrastructure: Distributed Cloud, the IoT, API gateways, AI at the edge and edge processing
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-7.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We focus on accelerated time-to-value automation that supports remote operations: endpoint management, SaaS management platforms, self-service and zero-touch provisioning
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-8.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We do not operate independently of each other, but rather build on and reinforce each other
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-9.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We believe that together we enable organizational plasticity that will help guide organizations on each technological transformation or challenge
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-10.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We enable customers be as successful as possible in their adoption and use of our platform
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-11.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We are committed to our clients and partners to maximize their ROI within technology space
-							</div>
-						</div>
-						<div class="deliver-item flex flex-column relative animated-icons">
-							<div class="deliver-item__img flex align-center justify-center animated-icons__img">
-								<img src="<?php bloginfo('template_url'); ?>/assets/img/icons/deliver-12.svg" alt="We deliver">
-							</div>
-							<div class="relative">
-								We work globally, adhering to NA, EMEA and APAC data quality and control standards
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php
+			$posts = get_posts( array(
+					'numberposts' => 10,
+					'post_type'   => 'block',
+			) );
+
+			foreach( $posts as $post ) {
+				setup_postdata($post);
+
+				switch (get_field('block_number')) {
+					case 1:
+						get_field('visible') ? get_template_part('blocks/block1') : '';
+						break;
+					case 2:
+						get_field('visible') ? get_template_part('blocks/block2') : '';
+						break;
+					case 3:
+						get_field('visible') ? get_template_part('blocks/block3') : '';
+						break;
+					case 4:
+						get_field('visible') ? get_template_part('blocks/block4') : '';
+						break;
+					case 5:
+						get_field('visible') ? get_template_part('blocks/block5') : '';
+						break;
+					case 6:
+						get_field('visible') ? get_template_part('blocks/block6') : '';
+						break;
+					case 7:
+						get_field('visible') ? get_template_part('blocks/block7') : '';
+						break;
+				}
+			}
+
+			wp_reset_postdata(); // сброс
+		?>
+
 		<section class="section-solve">
 			<div class="container-main">
 				<div class="container-inner">
@@ -1163,6 +753,7 @@
 						</div>
 					</div>
 					<div class="table-light grid scrollbar-map scrollbar-map-light">
+						<?= do_shortcode('[table id=1 /]') ?>
 						<table>
 							<thead>
 							<tr>
