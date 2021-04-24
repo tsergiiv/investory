@@ -245,6 +245,226 @@ function register_post_types(){
 		'rest_base'           => null, // $post_type. C WP 4.7
 		'menu_position'       => 4,
 		'menu_icon'           => null,
+		'capability_type' => 'post',
+		'capabilities' => [
+			'create_posts' => false,
+			'delete_posts' => false,
+			'delete_published_posts' => false,
+			'delete_private_posts' => false,
+		],
+		'map_meta_cap' => true,
+		'hierarchical'        => false,
+		'supports'            => ['custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => [],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
+
+	register_post_type( 'problems_block', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Problems We Solve', // основное название для типа записи
+			'singular_name'      => 'Problems We Solve', // название для одной записи этого типа
+			'add_new'            => 'Add content', // для добавления новой записи
+			'add_new_item'       => 'Add content', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Edit content', // для редактирования типа записи
+			'new_item'           => 'New content', // текст новой записи
+			'view_item'          => 'View content', // для просмотра записи этого типа.
+			'search_items'       => 'Search content', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in trash', // если не было найдено в корзине
+			'parent_item_colon'  => '', // для родителей (у древовидных типов)
+			'menu_name'          => 'Problems We Solve Block', // название меню
+		],
+		'description'         => '',
+		'public'              => true,
+		'publicly_queryable'  => true, // зависит от public
+		'exclude_from_search' => true, // зависит от public
+		'show_ui'             => true, // зависит от public
+		'show_in_nav_menus'   => true, // зависит от public
+		'show_in_menu'        => true, // показывать ли в меню адмнки
+		'show_in_admin_bar'   => true, // зависит от show_in_menu
+		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 4,
+		'menu_icon'           => null,
+		'capability_type' => 'post',
+		'capabilities' => [
+			'create_posts' => false,
+			'delete_posts' => false,
+			'delete_published_posts' => false,
+			'delete_private_posts' => false,
+		],
+		'map_meta_cap' => true,
+		'hierarchical'        => false,
+		'supports'            => ['custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => [],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
+
+	register_post_type( 'platform_block', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Platform and Solutions', // основное название для типа записи
+			'singular_name'      => 'Platform and Solutions', // название для одной записи этого типа
+			'add_new'            => 'Add content', // для добавления новой записи
+			'add_new_item'       => 'Add content', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Edit content', // для редактирования типа записи
+			'new_item'           => 'New content', // текст новой записи
+			'view_item'          => 'View content', // для просмотра записи этого типа.
+			'search_items'       => 'Search content', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in trash', // если не было найдено в корзине
+			'parent_item_colon'  => '', // для родителей (у древовидных типов)
+			'menu_name'          => 'Platform and Solutions Block', // название меню
+		],
+		'description'         => '',
+		'public'              => true,
+		'publicly_queryable'  => true, // зависит от public
+		'exclude_from_search' => true, // зависит от public
+		'show_ui'             => true, // зависит от public
+		'show_in_nav_menus'   => true, // зависит от public
+		'show_in_menu'        => true, // показывать ли в меню адмнки
+		'show_in_admin_bar'   => true, // зависит от show_in_menu
+		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 4,
+		'menu_icon'           => null,
+		'capability_type' => 'post',
+		'capabilities' => [
+			'create_posts' => false,
+			'delete_posts' => false,
+			'delete_published_posts' => false,
+			'delete_private_posts' => false,
+		],
+		'map_meta_cap' => true,
+		'hierarchical'        => false,
+		'supports'            => ['custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => [],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
+
+	register_post_type( 'features_block', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Key features', // основное название для типа записи
+			'singular_name'      => 'Key features', // название для одной записи этого типа
+			'add_new'            => 'Add content', // для добавления новой записи
+			'add_new_item'       => 'Add content', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Edit content', // для редактирования типа записи
+			'new_item'           => 'New content', // текст новой записи
+			'view_item'          => 'View content', // для просмотра записи этого типа.
+			'search_items'       => 'Search content', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in trash', // если не было найдено в корзине
+			'parent_item_colon'  => '', // для родителей (у древовидных типов)
+			'menu_name'          => 'Key Features Block', // название меню
+		],
+		'description'         => '',
+		'public'              => true,
+		'publicly_queryable'  => true, // зависит от public
+		'exclude_from_search' => true, // зависит от public
+		'show_ui'             => true, // зависит от public
+		'show_in_nav_menus'   => true, // зависит от public
+		'show_in_menu'        => true, // показывать ли в меню адмнки
+		'show_in_admin_bar'   => true, // зависит от show_in_menu
+		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 4,
+		'menu_icon'           => null,
+		'capability_type' => 'post',
+		'capabilities' => [
+			'create_posts' => false,
+			'delete_posts' => false,
+			'delete_published_posts' => false,
+			'delete_private_posts' => false,
+		],
+		'map_meta_cap' => true,
+		'hierarchical'        => false,
+		'supports'            => ['custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => [],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
+
+	register_post_type( 'solution_block', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Solutions for FinTech', // основное название для типа записи
+			'singular_name'      => 'Solutions for FinTech', // название для одной записи этого типа
+			'add_new'            => 'Add content', // для добавления новой записи
+			'add_new_item'       => 'Add content', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Edit content', // для редактирования типа записи
+			'new_item'           => 'New content', // текст новой записи
+			'view_item'          => 'View content', // для просмотра записи этого типа.
+			'search_items'       => 'Search content', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in trash', // если не было найдено в корзине
+			'parent_item_colon'  => '', // для родителей (у древовидных типов)
+			'menu_name'          => 'Solutions for FinTech Block', // название меню
+		],
+		'description'         => '',
+		'public'              => true,
+		'publicly_queryable'  => true, // зависит от public
+		'exclude_from_search' => true, // зависит от public
+		'show_ui'             => true, // зависит от public
+		'show_in_nav_menus'   => true, // зависит от public
+		'show_in_menu'        => true, // показывать ли в меню адмнки
+		'show_in_admin_bar'   => true, // зависит от show_in_menu
+		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 4,
+		'menu_icon'           => null,
+		'capability_type' => 'post',
+		'capabilities' => [
+			'create_posts' => false,
+			'delete_posts' => false,
+			'delete_published_posts' => false,
+			'delete_private_posts' => false,
+		],
+		'map_meta_cap' => true,
+		'hierarchical'        => false,
+		'supports'            => ['custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'taxonomies'          => [],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
+
+	register_post_type( 'business_block', [
+		'label'  => null,
+		'labels' => [
+			'name'               => 'Business Model', // основное название для типа записи
+			'singular_name'      => 'Business Model', // название для одной записи этого типа
+			'add_new'            => 'Add content', // для добавления новой записи
+			'add_new_item'       => 'Add content', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Edit content', // для редактирования типа записи
+			'new_item'           => 'New content', // текст новой записи
+			'view_item'          => 'View content', // для просмотра записи этого типа.
+			'search_items'       => 'Search content', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in trash', // если не было найдено в корзине
+			'parent_item_colon'  => '', // для родителей (у древовидных типов)
+			'menu_name'          => 'Business Model Block', // название меню
+		],
+		'description'         => '',
+		'public'              => true,
+		'publicly_queryable'  => true, // зависит от public
+		'exclude_from_search' => true, // зависит от public
+		'show_ui'             => true, // зависит от public
+		'show_in_nav_menus'   => true, // зависит от public
+		'show_in_menu'        => true, // показывать ли в меню адмнки
+		'show_in_admin_bar'   => true, // зависит от show_in_menu
+		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 4,
+		'menu_icon'           => null,
 //		'capability_type' => 'post',
 //		'capabilities' => [
 //			'create_posts' => false,
