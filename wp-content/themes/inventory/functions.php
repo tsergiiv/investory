@@ -12,6 +12,9 @@ function enqueue_styles()
 
 	wp_register_style('scrollbar', get_template_directory_uri() . '/assets/js/scrollmap/jquery.scrollbar.css', array(), date("h:i:s"));
 	wp_enqueue_style('scrollbar');
+
+	wp_register_style('my', get_template_directory_uri() . '/assets/css/my.css', array(), date("h:i:s"));
+	wp_enqueue_style('my');
 }
 
 function enqueue_scripts()

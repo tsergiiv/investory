@@ -1,0 +1,10 @@
+.success-item__description > ul > li::before {
+    content: '';
+    height: 16px;
+    min-width: 16px;
+    margin: 0 18px 0 0;
+    background: url(./assets/img/icons/check.svg) center / auto no-repeat !important;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}

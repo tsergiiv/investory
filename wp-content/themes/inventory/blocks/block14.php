@@ -1,40 +1,43 @@
-<!-- #14 Success Story -->
-<section id="section-success" class="section-success">
-	<div class="container-main">
-		<div class="container-inner">
-			<div class="title flex">
-				<h3 class="relative">Success Story</h3>
-			</div>
-			<div class="success-list grid">
-				<div class="success-item">
-					<div class="success-item__img">
-						<img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/img/success-1.png" alt="Proactive communication and collaboration">
-						<img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/img/success-1-mobile.png" alt="Proactive communication and collaboration">
+<?php
+	$posts = get_posts( array(
+			'post_type' => 'success_block',
+	) );
+
+	foreach( $posts as $post ) {
+		setup_postdata($post);
+		?>
+
+		<!-- #14 Success Story -->
+		<section id="section-success" class="section-success">
+			<div class="container-main">
+				<div class="container-inner">
+					<div class="title flex">
+						<h3 class="relative"><?= the_field('title') ?></h3>
 					</div>
-					<div class="success-item__title gilroy">Proactive communication and collaboration</div>
-					<ul class="success-item__description">
-						<li class="flex">Pre-empt the need for escalation</li>
-						<li>Understand customer experience and address needs
-							<ul>
-								<li>training/services gaps</li>
-								<li>product/process improvements</li>
-							</ul>
-						</li>
-						<li class="flex">Partner with customers on use cases & projects to leverage and maximize product investment</li>
-					</ul>
-				</div>
-				<div class="success-item">
-					<div class="success-item__img">
-						<img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/img/success-2.png" alt="Internal coordination and customer point person">
-						<img class="w-100" src="<?php bloginfo('template_url'); ?>/assets/img/success-2-mobile.png" alt="Internal coordination and customer point person">
+					<div class="success-list grid">
+						<div class="success-item">
+							<div class="success-item__img">
+								<img class="w-100" src="<?= the_field('image_1') ?>" alt="Proactive communication and collaboration">
+								<img class="w-100" src="<?= the_field('mobile_image_1') ?>" alt="Proactive communication and collaboration">
+							</div>
+							<div class="success-item__title gilroy"><?= the_field('title_1') ?></div>
+							<ul class="success-item__description"><?= the_field('text_1') ?></ul>
+						</div>
+						<div class="success-item">
+							<div class="success-item__img">
+								<img class="w-100" src="<?= the_field('image_2') ?>" alt="Internal coordination and customer point person">
+								<img class="w-100" src="<?= the_field('mobile_image_2') ?>" alt="Internal coordination and customer point person">
+							</div>
+							<div class="success-item__title gilroy"><?= the_field('title_2') ?></div>
+							<ul class="success-item__description"><?= the_field('text_2') ?></ul>
+						</div>
 					</div>
-					<div class="success-item__title gilroy">Internal coordination and customer point person</div>
-					<ul class="success-item__description">
-						<li class="flex">Manage internal resources</li>
-						<li class="flex">Customer advocate</li>
-					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
+
+		<?php
+	}
+
+	wp_reset_postdata();
+?>
