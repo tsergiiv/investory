@@ -129,7 +129,7 @@ $(document).ready(function(){
         let modal = $(this).attr('data-toggle');
         $(document).find('#' + modal).fadeIn(300);
         $('body').addClass('modal-open');
-        $('<div class="backdrop"></div>').hide().appendTo('body').fadeIn(300);
+        $('<div class="backdrop"></div>').hide().appendTo('#' + modal).fadeIn(300);
         e.preventDefault();
     });
     $('body').on('click', '.backdrop', function(){
@@ -145,8 +145,11 @@ $(document).ready(function(){
     });
 
     //scheme hover
-    $('.architecture-item').hover(function(){
+    $('.architecture-item.hover').hover(function(){
         $(this).parent().toggleClass('active');
+        if($(this).is('.__dedicated, .__proprietary')) {
+            $('.__union').toggleClass('active');
+        }
     });
 
     //favicon theme changer
@@ -186,12 +189,9 @@ $(document).ready(function(){
     $(window).scroll(function() {
         $('section, footer, .table-file').each(function(){
             let hT = $(this).offset().top,
-                hH = $(this).outerHeight(),
-                wH = $(window).height(),
                 wS = $(window).scrollTop();
-            if (wS > (hT+hH-wH)){
+            if (wS > (hT - 300)){
                 $(this).addClass('active');
-                console.log(hT);
             }
         });
     });

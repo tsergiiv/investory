@@ -26,6 +26,7 @@
 	<!-- #23 FinTech Venture Capital News and Highlights -->
 	<!-- #24 Key Leadership -->
 	<!-- #25 Start new era of data -->
+	<!-- #26 Disclaimer -->
 
 	<main>
 		<?php
@@ -37,83 +38,8 @@
 			foreach( $posts as $post ) {
 				setup_postdata($post);
 
-				switch (get_field('block_number')) {
-					case 1:
-						get_field('visible') ? get_template_part('blocks/block1') : '';
-						break;
-					case 2:
-						get_field('visible') ? get_template_part('blocks/block2') : '';
-						break;
-					case 3:
-						get_field('visible') ? get_template_part('blocks/block3') : '';
-						break;
-					case 4:
-						get_field('visible') ? get_template_part('blocks/block4') : '';
-						break;
-					case 5:
-						get_field('visible') ? get_template_part('blocks/block5') : '';
-						break;
-					case 6:
-						get_field('visible') ? get_template_part('blocks/block6') : '';
-						break;
-					case 7:
-						get_field('visible') ? get_template_part('blocks/block7') : '';
-						break;
-					case 8:
-						get_field('visible') ? get_template_part('blocks/block8') : '';
-						break;
-					case 9:
-						get_field('visible') ? get_template_part('blocks/block9') : '';
-						break;
-					case 10:
-						get_field('visible') ? get_template_part('blocks/block10') : '';
-						break;
-					case 11:
-						get_field('visible') ? get_template_part('blocks/block11') : '';
-						break;
-					case 12:
-						get_field('visible') ? get_template_part('blocks/block12') : '';
-						break;
-					case 13:
-						get_field('visible') ? get_template_part('blocks/block13') : '';
-						break;
-					case 14:
-						get_field('visible') ? get_template_part('blocks/block14') : '';
-						break;
-					case 15:
-						get_field('visible') ? get_template_part('blocks/block15') : '';
-						break;
-					case 16:
-						get_field('visible') ? get_template_part('blocks/block16') : '';
-						break;
-					case 17:
-						get_field('visible') ? get_template_part('blocks/block17') : '';
-						break;
-					case 18:
-						get_field('visible') ? get_template_part('blocks/block18') : '';
-						break;
-					case 19:
-						get_field('visible') ? get_template_part('blocks/block19') : '';
-						break;
-					case 20:
-						get_field('visible') ? get_template_part('blocks/block20') : '';
-						break;
-					case 21:
-						get_field('visible') ? get_template_part('blocks/block21') : '';
-						break;
-					case 22:
-						get_field('visible') ? get_template_part('blocks/block22') : '';
-						break;
-					case 23:
-						get_field('visible') ? get_template_part('blocks/block23') : '';
-						break;
-					case 24:
-						get_field('visible') ? get_template_part('blocks/block24') : '';
-						break;
-					case 25:
-						get_field('visible') ? get_template_part('blocks/block25') : '';
-						break;
-				}
+				$block_number = get_field('block_number');
+				get_field('visible') ? get_template_part('blocks/block' . $block_number) : '';
 			}
 
 			wp_reset_postdata(); // сброс

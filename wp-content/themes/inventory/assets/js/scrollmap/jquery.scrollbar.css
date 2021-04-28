@@ -857,6 +857,8 @@
     display: block;
 }
 
-
-
-
+@media screen and (min-width: 1256px) {
+    .scroll-element_outer {
+        display: none!important;
+    }
+}

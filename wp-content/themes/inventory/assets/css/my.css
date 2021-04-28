@@ -8,3 +8,22 @@
     position: relative;
     top: 3px;
 }
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+.table-light table td > b {
+    font-weight: 600;
+    font-size: var(--font-18);
+    letter-spacing: var(--letter-td);
+    line-height: var(--line-height-16);
+}
+
+.tablepress tfoot th, .tablepress thead th {
+    background-color: #fff !important;
+}
+
+table, table.tablepress {
+    border-radius: var(--radius-32) !important;
+}

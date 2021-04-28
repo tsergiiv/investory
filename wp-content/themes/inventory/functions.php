@@ -28,6 +28,9 @@ function enqueue_scripts()
 	wp_register_script('scrollbar', get_template_directory_uri() . '/assets/js/scrollmap/jquery.scrollbar.min.js', array(), date("h:i:s"));
 	wp_enqueue_script('scrollbar');
 
+	wp_enqueue_script('my', get_template_directory_uri() . '/assets/js/my.js', array(), date("h:i:s"));
+	wp_enqueue_script('my');
+
 	wp_register_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), date("h:i:s"));
 	wp_enqueue_script('scripts');
 }
