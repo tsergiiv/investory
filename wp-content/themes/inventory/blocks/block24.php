@@ -35,19 +35,6 @@ foreach( $posts as $post ) {
 						</div>
 					</div>
 					<div class="leader-info">
-						<div class="leader-info__title flex flex-column">
-							<h5 class="gilroy"><?= the_field('full_name') ?></h5>
-							<div class="contacts flex">
-								<div class="flex flex-column">
-									<a href="<?= the_field('linkedin') ?>" target="_blank" class="flex align-center">Linkedin</a>
-									<a href="<?php bloginfo('template_url'); ?>/assets/files/Marina_Berger.vcf" class="vcard flex align-center" download="vCard">vCard</a>
-								</div>
-								<div class="flex flex-column">
-									<a href="tel:<?= the_field('phone') ?>" class="flex align-center"><?= the_field('phone') ?></a>
-									<a href="mailto:<?= the_field('email') ?>" class="flex align-center"><?= the_field('email') ?></a>
-								</div>
-							</div>
-						</div>
 						<div class="leader-info__description active">
 							<h6 class="leader-description__title flex align-center gilroy"><?= the_field('title_1') ?><span class="plus relative flex align-center justify-center ml-auto"></span></h6>
 							<div class="leader-description__text" style="display: block;">

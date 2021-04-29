@@ -27,3 +27,11 @@
 table, table.tablepress {
     border-radius: var(--radius-32) !important;
 }
+
+#adminmenu .wp-not-current-submenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu {
+    min-width: 200px !important;
+}
+
+#submit-btn:disabled {
+    opacity: 0.5;
+}

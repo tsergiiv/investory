@@ -19,7 +19,6 @@
 							<div class="market-item__title gilroy"><?= the_field('title_1') ?></div>
 							<div class="market-item__img">
 								<img class="mw-100" src="<?= the_field('image_1') ?>" alt="History of US VC Deals">
-								<img class="mw-100" src="<?= the_field('table_image_1') ?>" alt="History of US VC Deals">
 							</div>
 							<div class="market-item__tips flex justify-center">
 								<div class="market-item__tip flex flex-column align-center justify-center"><?= the_field('lable_1') ?></div>
@@ -34,7 +33,6 @@
 							<div class="market-item__title gilroy"><?= the_field('title_2') ?></div>
 							<div class="market-item__img">
 								<img class="mw-100" src="<?= the_field('image_2') ?>" alt="History of US VC-backed IPOs">
-								<img class="mw-100" src="<?= the_field('table_image_2') ?>" alt="History of US VC-backed IPOs">
 							</div>
 							<div class="market-item__tips flex justify-center">
 								<div class="market-item__tip flex flex-column align-center justify-center"><?= the_field('lable_3') ?></div>

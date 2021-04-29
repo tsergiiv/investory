@@ -18,7 +18,6 @@
 						<div class="success-item">
 							<div class="success-item__img">
 								<img class="w-100" src="<?= the_field('image_1') ?>" alt="Proactive communication and collaboration">
-								<img class="w-100" src="<?= the_field('mobile_image_1') ?>" alt="Proactive communication and collaboration">
 							</div>
 							<div class="success-item__title gilroy"><?= the_field('title_1') ?></div>
 							<ul class="success-item__description"><?= the_field('text_1') ?></ul>
@@ -26,7 +25,6 @@
 						<div class="success-item">
 							<div class="success-item__img">
 								<img class="w-100" src="<?= the_field('image_2') ?>" alt="Internal coordination and customer point person">
-								<img class="w-100" src="<?= the_field('mobile_image_2') ?>" alt="Internal coordination and customer point person">
 							</div>
 							<div class="success-item__title gilroy"><?= the_field('title_2') ?></div>
 							<ul class="success-item__description"><?= the_field('text_2') ?></ul>

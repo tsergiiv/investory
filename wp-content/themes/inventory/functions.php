@@ -33,6 +33,9 @@ function enqueue_scripts()
 
 	wp_register_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), date("h:i:s"));
 	wp_enqueue_script('scripts');
+
+	wp_register_script('validation', get_template_directory_uri() . '/assets/js/validation.js', array(), date("h:i:s"));
+	wp_enqueue_script('validation');
 }
 
 add_theme_support( 'menus' );
@@ -48,12 +51,12 @@ add_shortcode ('year', 'year_shortcode');
 function send_mail()
 {
     $headers = array(
-        'From: Business Dept Adjusters <root@takasho.work>',
+        'From: Investory <root@takasho.work>',
         'content-type: text/html',
     );
 
-    $to = get_option('letters_email');; // place wp admin email here
-    $subject = stripslashes("Form from BDA Landing");
+    $to = get_option('letters_email'); // place wp admin email here
+    $subject = stripslashes("Form from Investory");
 
     $b = [];
     foreach ($_POST as $key => $value) {
@@ -118,3 +121,10 @@ function letters_email_setting_callback_function( $val ){
 }
 
 add_action('admin_menu', 'add_email_field_to_general_admin_page');
+
+function custom_login_logo() {
+	echo '<style type=”text/css”>
+	                  h1 a {background-image: url(' . get_bloginfo('template_directory') . '/assets/img/logo.svg) !important; }
+		  </style>';
+}
+add_action('login_head', 'custom_login_logo');

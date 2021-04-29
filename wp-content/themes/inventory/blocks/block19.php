@@ -3,12 +3,27 @@
 	<div class="container-main">
 		<div class="container-inner">
 			<div class="title flex flex-column align-center">
-				<h3 class="relative">
-					Market Size, Acquisitions and Funding
-				</h3>
-				<div class="title-tip">
-					Acquisitions and Funding
-				</div>
+				<?php
+					$posts = get_posts( array(
+							'post_type' => 'table_block',
+					) );
+
+					foreach( $posts as $post ) {
+						setup_postdata($post);
+						?>
+
+						<h3 class="relative">
+							<?= the_field('title_1') ?>
+						</h3>
+						<div class="title-tip">
+							<?= the_field('subtitle') ?>
+						</div>
+
+						<?php
+					}
+
+					wp_reset_postdata();
+				?>
 			</div>
 			<div class="table-light grid scrollbar-map scrollbar-map-light">
 				<?= do_shortcode('[table id=1 /]') ?>

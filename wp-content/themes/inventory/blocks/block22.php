@@ -3,13 +3,28 @@
 	<div class="container-main">
 		<div class="container-inner">
 			<div class="title no-anim flex flex-column align-center">
-				<h3 class="relative">
-					Financials
-				</h3>
-				<div class="table-files flex align-center">
-					<div class="table-file flex align-center justify-center"><a href="assets/files/Projected%20Income%20and%20Expenses.xlsx" download="Project Income and Projected Expenses" class="flex align-center"><span>Project Income and Projected Expenses</span></a></div>
-					<div class="table-file flex align-center justify-center"><a href="assets/files/High%20Level%20Projections.xlsx" download="High Level Projections" class="flex align-center"><span>High Level Projections</span></a></div>
-				</div>
+				<?php
+					$posts = get_posts( array(
+							'post_type' => 'table_block',
+					) );
+
+					foreach( $posts as $post ) {
+						setup_postdata($post);
+						?>
+
+						<h3 class="relative">
+							<?= the_field('title_4') ?>
+						</h3>
+						<div class="table-files flex align-center">
+							<div class="table-file flex align-center justify-center"><a href="<?= the_field('file_1') ?>" download="<?= the_field('file_name_1') ?>" class="flex align-center"><span><?= the_field('file_name_1') ?></span></a></div>
+							<div class="table-file flex align-center justify-center"><a href="<?= the_field('file_2') ?>" download="<?= the_field('file_name_2') ?>" class="flex align-center"><span><?= the_field('file_name_2') ?></span></a></div>
+						</div>
+
+						<?php
+					}
+
+					wp_reset_postdata();
+				?>
 			</div>
 			<div class="table-dark-alt table-ligh-alt grid scrollbar-map scrollbar-map-light-alt">
 				<?= do_shortcode('[table id=3 /]') ?>
