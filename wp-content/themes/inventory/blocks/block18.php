@@ -12,7 +12,9 @@
 			<div class="container-main">
 				<div class="container-inner">
 					<div class="title flex flex-column align-center">
-						<h3 class="relative"><?= the_field('title') ?></h3>
+						<h3 class="relative">
+							<?= the_field('title') ?>
+						</h3>
 					</div>
 					<div class="market-list grid scrollbar-map scrollbar-map-market">
 						<div class="market-list__item">

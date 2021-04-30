@@ -18,25 +18,35 @@
 						<div class="we-know__left grid">
 							<div class="we-know__item grid relative">
 								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-1.svg" alt=""></div>
-								<div class="relative"><?= the_field('text_1') ?></div>
+								<div class="relative">
+									<?= the_field('text_1') ?>
+								</div>
 							</div>
 							<div class="we-know__item grid relative">
 								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-2.svg" alt="Value"></div>
-								<div class="relative"><?= the_field('text_2') ?></div>
+								<div class="relative">
+									<?= the_field('text_2') ?>
+								</div>
 							</div>
 							<div class="we-know__item grid relative">
 								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-3.svg" alt="Value"></div>
-								<div class="relative"><?= the_field('text_3') ?></div>
+								<div class="relative">
+									<?= the_field('text_3') ?>
+								</div>
 							</div>
 						</div>
 						<div class="we-know__right grid">
 							<div class="we-know__item grid relative">
 								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-4.svg" alt="Value"></div>
-								<div class="relative"><?= the_field('text_4') ?></div>
+								<div class="relative">
+									<?= the_field('text_4') ?>
+								</div>
 							</div>
 							<div class="we-know__item grid relative">
 								<div class="we-know__img flex align-center justify-center"><img class="relative" src="<?php bloginfo('template_url'); ?>/assets/img/icons/we-know-5.svg" alt="Value"></div>
-								<div class="relative"><?= the_field('text_5') ?></div>
+								<div class="relative">
+									<?= the_field('text_5') ?>
+								</div>
 							</div>
 						</div>
 					</div>

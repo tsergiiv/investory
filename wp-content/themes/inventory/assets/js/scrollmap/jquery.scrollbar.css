@@ -791,7 +791,9 @@
     background: rgba(255, 255, 255, 0.12);
 }
 .scrollbar-map-market.scrollbar-map > .scroll-element_outer,
-.table-light.scrollbar-map > .scroll-element_outer {
+.table-light.scrollbar-map > .scroll-element_outer,
+.table-light-alt.scrollbar-map > .scroll-element_outer,
+.table-light-alt.scrollbar-map > .scroll-element_outer {
     background: #E6EEFF;
 }
 .scrollbar-map > .scroll-element_outer::before,
@@ -808,7 +810,9 @@
 .scrollbar-map-market.scrollbar-map > .scroll-element_outer::before,
 .scrollbar-map-market.scrollbar-map > .scroll-element_outer::after,
 .table-light.scrollbar-map > .scroll-element_outer::before,
-.table-light.scrollbar-map > .scroll-element_outer::after {
+.table-light.scrollbar-map > .scroll-element_outer::after,
+.table-light-alt.scrollbar-map > .scroll-element_outer::before,
+.table-light-alt.scrollbar-map > .scroll-element_outer::after {
     background: #FFFFFF;
 }
 .scrollbar-map > .scroll-element_outer::after {

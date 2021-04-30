@@ -22,7 +22,7 @@
 					<div class="global-data-overflow scrollbar-map scrollbar-map-global">
 						<div class="global-data grid">
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2020</div>
+								<div class="data-year gilroy"><?= the_field('year_1') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -32,7 +32,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2021</div>
+								<div class="data-year gilroy"><?= the_field('year_2') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -42,7 +42,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2022</div>
+								<div class="data-year gilroy"><?= the_field('year_3') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -52,7 +52,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2023</div>
+								<div class="data-year gilroy"><?= the_field('year_4') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -62,7 +62,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2024</div>
+								<div class="data-year gilroy"><?= the_field('year_5') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -72,7 +72,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2025</div>
+								<div class="data-year gilroy"><?= the_field('year_6') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -82,7 +82,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2026</div>
+								<div class="data-year gilroy"><?= the_field('year_7') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -92,7 +92,7 @@
 								</div>
 							</div>
 							<div class="global-data__item flex flex-column">
-								<div class="data-year gilroy">2027</div>
+								<div class="data-year gilroy"><?= the_field('year_8') ?></div>
 								<div class="data-chart flex flex-column">
 									<div></div>
 									<div></div>
@@ -104,19 +104,19 @@
 						</div>
 						<div class="global-data__tips grid">
 							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">North America</div>
+								<div class="data-name"><?= the_field('area_1') ?></div>
 							</div>
 							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">Europe</div>
+								<div class="data-name"><?= the_field('area_2') ?></div>
 							</div>
 							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">Asia Pacific</div>
+								<div class="data-name"><?= the_field('area_3') ?></div>
 							</div>
 							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">South America</div>
+								<div class="data-name"><?= the_field('area_4') ?></div>
 							</div>
 							<div class="global-data__item flex flex-column align-center relative">
-								<div class="data-name">Middle East and Africa</div>
+								<div class="data-name"><?= the_field('area_5') ?></div>
 							</div>
 						</div>
 						<div class="bot-tip">

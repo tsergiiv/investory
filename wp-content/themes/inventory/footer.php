@@ -20,24 +20,78 @@
 							<?= the_field('text') ?>
 						</div>
 						<nav class="footer-botrow flex align-center">
-							<a href="#section-we-know">Problem statement</a>
-							<a href="#section-solutions">Solution</a>
-							<a href="#section-business">Business Model</a>
+							<?php
+								$menuParameters = [
+										'theme_location'  => '',
+										'menu'            => 'bottom-left',
+										'container'       => false,
+										'container_class' => '',
+										'container_id'    => '',
+										'menu_class'      => '',
+										'menu_id'         => '',
+										'echo'            => false,
+										'fallback_cb'     => 'wp_page_menu',
+										'before'          => '',
+										'after'           => '',
+										'link_before'     => '',
+										'link_after'      => '',
+										'items_wrap'      => '%3$s',
+										'depth'           => 0,
+										'walker'          => '',
+								];
+
+								echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+							?>
 							<div class="logo ml-auto">
 								<img src="<?php bloginfo('template_url'); ?>/assets/img/logo-footer.svg" alt="Logo">
 							</div>
-							<a href="#section-success">Success Story</a>
-							<a href="#section-market">Market Overview</a>
-							<a href="#section-news">Industry Highlights</a>
+							<?php
+								$menuParameters = [
+										'theme_location'  => '',
+										'menu'            => 'bottom-right',
+										'container'       => false,
+										'container_class' => '',
+										'container_id'    => '',
+										'menu_class'      => '',
+										'menu_id'         => '',
+										'echo'            => false,
+										'fallback_cb'     => 'wp_page_menu',
+										'before'          => '',
+										'after'           => '',
+										'link_before'     => '',
+										'link_after'      => '',
+										'items_wrap'      => '%3$s',
+										'depth'           => 0,
+										'walker'          => '',
+								];
+
+								echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+							?>
 						</nav>
 						<div class="menu">Menu</div>
 						<nav class="menu-nav">
-							<a href="#section-we-know">Problem statement</a>
-							<a href="#section-solutions">Solution</a>
-							<a href="#section-business">Business Model</a>
-							<a href="#section-success">Success Story</a>
-							<a href="#section-market">Market Overview</a>
-							<a href="#section-news">Industry Highlights</a>
+							<?php
+								$menuParameters = [
+										'theme_location'  => 'top',
+										'menu'            => '',
+										'container'       => false,
+										'container_class' => '',
+										'container_id'    => '',
+										'menu_class'      => '',
+										'menu_id'         => '',
+										'echo'            => false,
+										'fallback_cb'     => 'wp_page_menu',
+										'before'          => '',
+										'after'           => '',
+										'link_before'     => '',
+										'link_after'      => '',
+										'items_wrap'      => '%3$s',
+										'depth'           => 0,
+										'walker'          => '',
+								];
+
+								echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+							?>
 						</nav>
 						<div class="copyright">
 							<?= the_field('copyright') ?>

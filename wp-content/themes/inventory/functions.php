@@ -5,8 +5,6 @@ add_action('wp_footer', 'enqueue_scripts');
 
 function enqueue_styles()
 {
-    wp_enqueue_style('bda-style', get_stylesheet_uri(), array(), date("h:i:s"));
-
 	wp_register_style('owl-carousel', get_template_directory_uri() . '/assets/js/owl-carousel/owl.carousel.min.css', array(), date("h:i:s"));
 	wp_enqueue_style('owl-carousel');
 
@@ -15,6 +13,8 @@ function enqueue_styles()
 
 	wp_register_style('my', get_template_directory_uri() . '/assets/css/my.css', array(), date("h:i:s"));
 	wp_enqueue_style('my');
+
+	wp_enqueue_style('style', get_stylesheet_uri(), array(), date("h:i:s"));
 }
 
 function enqueue_scripts()
@@ -33,6 +33,12 @@ function enqueue_scripts()
 
 	wp_register_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), date("h:i:s"));
 	wp_enqueue_script('scripts');
+
+	wp_register_script('lottie', get_template_directory_uri() . '/assets/js/lines/lottie.js', array(), date("h:i:s"));
+	wp_enqueue_script('lottie');
+
+	wp_register_script('lines', get_template_directory_uri() . '/assets/js/lines/lines.js', array(), date("h:i:s"));
+	wp_enqueue_script('lines');
 
 	wp_register_script('validation', get_template_directory_uri() . '/assets/js/validation.js', array(), date("h:i:s"));
 	wp_enqueue_script('validation');

@@ -6,6 +6,7 @@
     --color-white-2: rgba(250, 250, 250, 0.72);
     --color-white-3: rgba(250, 250, 250, 0.06);
     --color-grey: #F9F9F9;
+    --color-grey-2: #F5F5F5;
     --color-grey-icon: #E6EEFF;
     --color-blue: #0051FF;
     --color-blue-2: rgba(0, 81, 255, 0.16);
@@ -28,6 +29,7 @@
     --color-news: rgba(230, 238, 255, 0.25);
     --color-popup: #0AB4EF;
     --color-popup-circle: #071F40;
+    --color-cloud: #0A2340;
     --grad-info: linear-gradient(151.32deg, rgba(0, 81, 255, 0.85) 0%, rgba(0, 81, 255, 0.03) 98.8%);
     --grad-data-1: linear-gradient(123.23deg, #37BF76 8.02%, #37BF3C 100%);
     --grad-data-2: linear-gradient(137.98deg, #37BFBF -6.24%, #37BFA7 108.07%);
@@ -36,6 +38,7 @@
     --grad-data-5: linear-gradient(129.33deg, #AF2879 8.8%, #A437BF 112.75%);
     --grad-management-1: linear-gradient(124.13deg, #374DBF -4.15%, #377EBF 103.13%);
     --grad-management-2: linear-gradient(176.75deg, #A437BF 2.68%, #9337BF 115.18%);
+    --grad-cookies: linear-gradient(294.94deg, rgba(4, 33, 77, 0.6) 8.26%, rgba(29, 29, 53, 0.6) 94.9%);
 
     /* DATA COLORS */
     --data-1: #37BF76;
@@ -50,6 +53,7 @@
     --font-14: 14px;
     --font-16: 16px;
     --font-18: 18px;
+    --font-20: 20px;
     --font-24: 24px;
     --font-34: 34px;
     --font-46: 46px;
@@ -80,6 +84,7 @@
     --letter-h3: -0.4px;
     --letter-h4: -0.3px;
     --letter-td: -0.035em;
+    --letter-scheme: -0.8px;
     --letter-link: -0.002px;
 
     /* RADIUS */
@@ -92,11 +97,12 @@
     --radius-26: 26px;
     --radius-30: 30px;
     --radius-32: 32px;
+    --radius-40: 40px;
     --radius-52: 52px;
     --radius-circle: 50%;
     --radius-popup: 50% 50% 50% 4px;
     --radius-popup-2: 50% 50% 4px 50%;
     --radius-popup-3: 4px 50% 50% 50%;
-    --radius-data-first: 30px 30px 0 0;
-    --radius-data-last: 0 0 30px 30px;
+    --radius-data-first: 8px 8px 0 0;
+    --radius-data-last: 0 0 8px 8px;
 }

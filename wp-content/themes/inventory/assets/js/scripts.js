@@ -1,8 +1,18 @@
 $(document).ready(function(){
+    let cookies = localStorage.getItem('cookiesAccepted');
+
+    if(cookies == "true") {
+        $('.cookies').remove();
+        $('a[data-toggle="modal-contacts"]').addClass('allow');
+    } else {
+        $('.cookies').css('display', 'grid');
+        $('a[data-toggle="modal-contacts"]').removeClass('allow');
+    }
+
     //tabs
     $('.nav-tabs a').click(function(e){
         let tabId = $(this).attr('href');
-        $('.nav-tabs a').removeClass('active');
+        $('.nav-tabs a').removeClass('active'); 
         $(this).addClass('active');
         $('.section-tab.fade').removeClass('fade').fadeOut(0);
         $(tabId).addClass('fade').fadeIn(300);
@@ -127,9 +137,14 @@ $(document).ready(function(){
     //modals
     $('body').on('click', '.modal-toggle', function(e){
         let modal = $(this).attr('data-toggle');
-        $(document).find('#' + modal).fadeIn(300);
-        $('body').addClass('modal-open');
-        $('<div class="backdrop"></div>').hide().appendTo('#' + modal).fadeIn(300);
+        if($(this).attr('data-toggle') == 'modal-contacts' && !$(this).hasClass('allow')) {
+            $('.allow-tip').remove();
+            $(this).append('<div class="allow-tip">Please, allow all cookies</div>');
+        } else {
+            $(document).find('#' + modal).fadeIn(300);
+            $('body').addClass('modal-open');
+            $('<div class="backdrop"></div>').hide().appendTo('#' + modal).fadeIn(300);
+        }
         e.preventDefault();
     });
     $('body').on('click', '.backdrop', function(){
@@ -195,13 +210,21 @@ $(document).ready(function(){
             }
         });
     });
+
+    $('body').on('click', '.button-accept', function(){
+        $('a[data-toggle="modal-contacts"]').addClass('allow');
+        $('.cookies').fadeOut();
+        $('.allow-tip').remove();
+        localStorage.setItem('cookiesAccepted', 'true');
+    });
 });
 
 //responsive carousel
 $(window).on('load resize', function(){
-    if($(window).width() < 1200) {
+    if($(window).width() < 1257) {
         $('.owl-carousel').trigger('destroy.owl.carousel');
         $('.projects-list').removeClass('owl-carousel');
+        $('header nav a[data-toggle="modal-contacts"]').insertAfter('header nav');
     } else {
         $('.projects-list').addClass('owl-carousel');
         $('.owl-carousel').owlCarousel({
@@ -217,6 +240,7 @@ $(window).on('load resize', function(){
                 }
             }
         });
+        $('header a[data-toggle="modal-contacts"]').insertAfter('header nav a:last-child');
     }
 });
 
