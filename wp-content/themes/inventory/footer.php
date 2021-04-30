@@ -205,6 +205,16 @@
 			</div>
 		</div>
 	</div>
+	<div class="cookies">
+		<div class="cookies-text">
+			We use cookies to offer you a better browsing experience.
+			Cookies enhance site navigation, analyze site usage, and assist in our marketing efforts.
+			To understand more about how we use cookies or to change your cookie preferences, click on “Cookie Settings”.
+			By clicking “Accept All Cookies,” you agree to the storing of cookies on your device.
+		</div>
+		<button type="button" class="button button-settings pointer">Cookie Settings</button>
+		<button type="button" class="button button-accept pointer">Accept All Cookies</button>
+	</div>
 	<div class="scroll-top"><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/owl-right.svg" alt=""></div>
 
 	<script type="text/javascript">

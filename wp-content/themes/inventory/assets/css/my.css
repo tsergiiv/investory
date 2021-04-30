@@ -33,3 +33,7 @@ table, table.tablepress {
     padding: 0 !important;
     margin: 0 !important;
 }
+
+.login h1 a {
+    background-image: url(../img/w-logo-blue.png2) !important;
+}
